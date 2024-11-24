@@ -2,7 +2,7 @@
 
 ## Platform
 
-- [LeetCode](https://leetcode.com/
+- [LeetCode](https://leetcode.com/)
 
 ## Language
 
