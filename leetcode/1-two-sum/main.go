@@ -3,7 +3,7 @@
 	Link: https://leetcode.com/problems/two-sum/description/
 */
 
-package __two_sum
+package main
 
 func twoSum(nums []int, target int) []int {
 	numMap := make(map[int]int)
