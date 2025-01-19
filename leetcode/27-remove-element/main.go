@@ -1,13 +1,21 @@
+/*
+Problem: Remove Element
+Link: https://leetcode.com/problems/remove-element/
+
+Solution: Use "Fast and Slow Pointers"
+*/
 package main
 
 func removeElement(nums []int, val int) int {
-	for i := 0; i < len(nums); i++ {
-		if nums[i] == val {
-			nums[i] = nums[len(nums)-1]
-			nums = nums[:len(nums)-1]
-			i--
+	slow := 0
+
+	for fast := 0; fast < len(nums); fast++ {
+		if nums[fast] == val {
+			continue
 		}
+		nums[slow] = nums[fast]
+		slow++
 	}
 
-	return len(nums)
+	return slow
 }
